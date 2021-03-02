@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('fonts/CormorantGaramond-Bold.eot');
+    src: local('Cormorant Garamond Bold'), local('CormorantGaramond-Bold'),
+        url('fonts/CormorantGaramond-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/CormorantGaramond-Bold.woff2') format('woff2'),
+        url('fonts/CormorantGaramond-Bold.woff') format('woff'),
+        url('fonts/CormorantGaramond-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('fonts/CormorantGaramond-Regular.eot');
+    src: local('Cormorant Garamond Regular'), local('CormorantGaramond-Regular'),
+        url('fonts/CormorantGaramond-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/CormorantGaramond-Regular.woff2') format('woff2'),
+        url('fonts/CormorantGaramond-Regular.woff') format('woff'),
+        url('fonts/CormorantGaramond-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.eot');
+    src: local('Roboto'), local('Roboto-Regular'),
+        url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto-Regular.woff') format('woff'),
+        url('fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

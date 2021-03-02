@@ -1,0 +1,124 @@
+body,
+html
+    padding: 0
+    margin: 0
+    font-family: Cormorant Garamond
+    color: #EDEDED
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 26px
+    min-width: 320px
+    background: #26197B
+
+.wrapper
+    max-width: 1290px
+    width: 96%
+    margin: 0 auto
+    position: relative
+    background: #170D57
+    z-index: 1
+    margin-top: 100px
+
+    & > *
+        z-index: 1
+
+    &::before
+        content: ''
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: rgba(255, 255, 255, 0.8)
+        filter: blur(250px)
+        position: absolute
+        z-index: 0
+
+    &::after
+        content: ''
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: #170D57
+        position: absolute
+        z-index: 0
+
+.plug
+    position: relative
+    height: 100%
+
+    .wrapper
+        justify-content: space-between
+        align-items: flex-start
+        flex-wrap: wrap
+        display: flex
+        margin-bottom: 30px
+        position: relative
+
+    &__block
+        margin: 27px
+        border: 1px solid rgba(255, 255, 255, 0.5)
+        box-sizing: border-box
+        width: 100%
+        text-align: center
+
+    &__text
+        font-family: Roboto
+        padding: 0 0 70px 0
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+
+    &__title
+        font-weight: bold
+        font-size: 47px
+        line-height: 44px
+        text-transform: uppercase
+        margin: 150px 10px 60px 10px
+
+    &__address
+        padding: 70px 10px 10px 10px
+        font-size: 20px
+    
+    &__email
+        display: flex
+        align-items: center
+        justify-content: center
+        padding-bottom: 90px
+        font-size: 20px
+
+    &__icon
+        background-image: url('mail.svg')
+        background-repeat: no-repeat
+        background-position: center center
+        width: 16px
+        height: 16px
+        margin-right: 12px
+
+@media screen and ( max-width: 950px )
+    .wrapper
+        margin-top: 10px
+
+    .plug__title
+        font-size: 27px
+        line-height: 35px
+        margin: 50px 0 30px 0
+
+    .plug__block
+        width: 100%
+        margin: 10px
+
+    .plug__back
+        position: relative
+        width: 90%
+        margin: 30px 5% 0 5%
+        top: 0
+        left: 0
+        height: auto
+        transform: translate(0, 0)
+        max-width: 353px
+
+        img
+            width: 100%
+
+    .plug__footer
+        margin: 20px 5% 0 5%

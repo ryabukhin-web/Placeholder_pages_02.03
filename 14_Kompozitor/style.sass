@@ -1,0 +1,181 @@
+body,
+html
+    padding: 0
+    margin: 0
+    font-family: Lato
+    color: #121212
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 24px
+    min-width: 320px
+    background: #CECECE
+    min-height: 100vh
+
+.wrapper
+    width: 90%
+    position: relative
+    margin: 0 auto
+    max-width: 1770px
+
+.plug
+    position: relative
+
+    &__block
+        width: calc(80% - 140px)
+        max-width: 1366px
+        padding: 70px
+        margin: 0
+        border: 2px solid #000000
+        box-sizing: border-box
+        margin: 30px auto 70px auto
+
+    &__text
+        font-family: Roboto
+        font-weight: 900
+        font-size: 24px
+        line-height: 32px
+        margin: 0 10px
+        align-items: center
+        display: flex
+
+    &__title
+        padding: 10px 0 5px
+        font-size: 32px
+        line-height: 36px
+
+    &__address
+        justify-content: space-between
+        display: flex
+        padding: 0 0 30px 0
+
+    &__email
+        display: flex
+        align-items: center
+        margin-left: 10px
+
+    &__icon
+        background-image: url('mail.svg')
+        background-repeat: no-repeat
+        background-position: center center
+        width: 16px
+        height: 16px
+        margin-right: 12px
+
+    &__block-line
+        width: 100%
+        height: 15px
+        box-sizing: border-box
+        border-bottom: 1px solid #000000
+
+        &:last-child
+            border-bottom: none
+
+    &__block-col1
+        min-height: 86px
+        background: #333333
+        width: 16px
+        margin-left: 95px
+
+    &__block-col2
+        width: 76px
+        min-height: 86px
+        margin-right: 95px
+        display: flex
+        justify-content: space-between
+
+        &_1
+            width: 16px
+            height: 100%
+            background: #333333
+            margin-right: 10px
+
+        &_2
+            width: 46px
+            height: 100%
+            background: #333333
+            margin-right: 10px
+
+    &__block-cont
+        width: 80%
+        max-width: 1366px
+        border: 2px solid #000000
+        justify-content: space-between
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        align-items: stretch
+        position: relative
+        background: #CECECE
+
+        &_1
+            left: 20%
+
+        &_2
+            left: 10%
+            top: -1px
+            flex-wrap: nowrap
+
+        &_3
+            left: 0
+            top: -2px
+
+        &_4
+            top: -3px
+            left: 8%
+
+        &_5
+            top: -5px
+            left: 15%
+
+        &_6
+            top: -6px
+            left: 13%
+
+@media screen and ( max-width: 960px )
+    .plug__block
+        width: calc(100% - 60px)
+        max-width: 1366px
+        padding: 10px 30px
+        margin: 30px auto 30px auto
+
+    .plug__block-line
+        height: 9px
+
+    .plug__block-col1
+        min-height: 46px
+        margin-left: 10px
+
+    .plug__block-col2
+        min-height: 46px
+        margin-right: 10px
+    
+@media screen and ( max-width: 680px )
+    .plug__block
+        width: calc(100% - 40px)
+        padding: 0 20px
+
+    .plug__title 
+        padding: 10px 0 10px 0
+        font-size: 23px
+        line-height: 30px
+
+    .plug__address
+        flex-wrap: wrap
+
+        & > *
+            width: 100%
+
+    .plug__email
+        justify-content: flex-end
+        margin-top: 30px
+
+    .plug__text
+        font-size: 18px
+        line-height: 24px
+        padding: 10px 0
+
+    .plug__block-cont_2
+        .plug__block-col1,
+        .plug__block-col2
+            display: none

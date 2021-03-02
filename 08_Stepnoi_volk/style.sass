@@ -1,0 +1,110 @@
+body,
+html
+    padding: 0
+    margin: 0
+    font-family: PT Mono
+    color: #fff
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 24px
+    min-width: 320px
+    background: #132955
+    min-height: 100vh
+
+.wrapper
+    max-width: 1290px
+    width: 90%
+    margin: 0 auto
+    position: relative
+
+.plug
+    position: relative
+    background-image: url(back.png)
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+    height: 100%
+
+    &__header
+        padding: 100px 0 30px 0
+        border-bottom: 2px solid rgba(141, 183, 245, 0.25)
+        margin-bottom: 150px
+        font-weight: 300
+
+        & .wrapper
+            display: flex
+            align-items: center
+            justify-content: space-between
+            flex-wrap: wrap
+        
+    &__address
+        width: 340px
+
+    &__email
+        display: flex
+        align-items: center
+        justify-content: center
+
+    &__icon
+        background-image: url('mail.svg')
+        background-repeat: no-repeat
+        background-position: center center
+        width: 16px
+        height: 16px
+        margin-right: 12px
+
+    &__block
+        text-align: center
+        padding-bottom: 100px
+
+    &__title
+        font-size: 60.9961px
+        line-height: 72px
+        text-transform: uppercase
+        color: #8DB7F5
+    
+    &__title-h2
+        margin-top: 13px
+        font-size: 24px
+        line-height: 32px
+        letter-spacing: 0.22em
+        text-transform: uppercase
+        color: #8DB7F5
+        margin-bottom: 60px
+
+    &__text
+        margin-bottom: 13px
+        font-family: Roboto Mono
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 26px
+        color: #FFFFFF
+
+@media screen and ( max-width: 1050px )
+    .plug__address
+        width: 100%
+        text-align: center
+
+    .plug__email
+        width: 100%
+        text-align: center
+        margin: 15px 0
+
+@media screen and ( max-width: 900px )
+    .plug__image
+        top: 110px
+        width: 80%
+    
+    .plug__str
+        font-size: 20px
+
+    .plug__title 
+        font-size: 40px
+        line-height: 45px
+
+@media screen and ( max-width: 468px )
+    .plug__header
+        padding-top: 50px
+        font-size: 14px

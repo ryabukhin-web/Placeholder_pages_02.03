@@ -1,0 +1,105 @@
+body,
+html
+    padding: 0
+    margin: 0
+    font-family: Lato
+    color: #121212
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 24px
+    min-width: 320px
+    background: #E58F06
+    min-height: 100vh
+
+.wrapper
+    max-width: 1290px
+    width: 90%
+    height: 100%
+    margin: 0 auto
+    position: relative
+
+.plug
+    position: relative
+    height: 100%
+
+    & > *
+        z-index: 1
+
+    .wrapper
+        justify-content: flex-start
+        align-items: center
+        flex-wrap: nowrap
+        display: flex
+        min-height: 100vh
+
+    &__block
+        background: #E58F06
+        padding: 70px 160px 0 40px
+
+    &__text
+        font-family: Roboto
+        font-style: normal
+        font-weight: 400
+        color: #fff
+        margin-left: 50px
+
+        span
+            font-weight: bold
+
+    &__title
+        font-size: 22px
+        line-height: 30px
+        max-width: 340px
+        margin: 0 0 3px 0
+        font-weight: 900
+        text-transform: uppercase
+
+    &__address
+        max-width: 340px
+        margin-bottom: 40px
+
+    &__email
+        display: flex
+        align-items: center
+
+    &__icon
+        background-image: url('mail.svg')
+        background-repeat: no-repeat
+        background-position: center center
+        width: 16px
+        height: 16px
+        margin-right: 12px
+
+    &__line
+        height: 74px
+        width: 100%
+        position: absolute
+        top: 50%
+        transform: translate(0, -50%)
+        background: #121212
+        z-index: 0
+
+@media screen and ( max-width: 1200px )
+    .plug__block 
+        padding: 70px 30px 0 20px
+
+    .plug__text
+        margin-left: 20px
+
+@media screen and ( max-width: 800px )
+    .plug__line
+        display: none
+
+    .plug .wrapper
+        flex-flow: column-reverse
+
+    .plug__block
+        padding: 50px 0 50px 0
+
+    .plug__text
+        padding: 30px 10px
+        width: calc(100% - 20px)
+        background: #121212
+        margin: 0
+        text-align: center

@@ -1,0 +1,137 @@
+body,
+html
+    padding: 0
+    margin: 0
+    font-family: Lato
+    color: #EDEDED
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 26px
+    min-width: 320px
+    background: #26197B
+    min-height: 100vh
+
+.wrapper
+    max-width: 1290px
+    width: 90%
+    margin: 0 auto
+    position: relative
+
+.plug
+    position: relative
+    background-image: url(back1.png)
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+    height: 100%
+
+    & > *
+        z-index: 1
+
+    .wrapper
+        justify-content: flex-start
+        align-items: center
+        flex-wrap: nowrap
+        display: flex
+        min-height: 100vh
+
+    &__block
+        padding: 100px 0 50px 0
+
+    &__text
+        font-family: Roboto
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 26px
+        color: #FFFFFF
+        margin: 100px 0
+
+    &__title
+        font-weight: bold
+        font-size: 61.0299px
+        line-height: 57px
+        text-transform: uppercase
+        color: #EDEDED
+        margin-top: 100px
+        margin-bottom: 10px
+
+    &__title-h2
+        font-weight: normal
+        font-size: 26.0426px
+        line-height: 33px
+        color: #EDEDED
+        margin-bottom: 10px
+
+    &__address
+        max-width: 460px
+        margin-bottom: 30px
+
+    &__email
+        display: flex
+        align-items: center
+
+    &__icon
+        background-image: url('mail.svg')
+        background-repeat: no-repeat
+        background-position: center center
+        width: 16px
+        height: 16px
+        margin-right: 12px
+
+    &__back
+        position: absolute
+        width: 40%
+        right: 0
+        bottom: 0
+        z-index: 0
+        max-width: 918px
+
+        img
+            width: 100%
+
+@media screen and ( max-width: 1200px )
+    .plug__block 
+        padding: 0 0 50px 0
+        width: 50%
+
+    .plug__title
+        font-size: 40px
+        line-height: 40px
+
+@media screen and ( max-width: 800px )
+    .plug__line
+        display: none
+
+    .plug .wrapper
+        flex-flow: column-reverse
+		min-height: auto
+
+    .plug__block
+        padding: 50px 0 50px 0
+
+    .plug__text
+        padding: 30px 0
+        margin: 0
+
+    .plug__back
+        position: relative
+        width: 90%
+        margin: 0 5%
+
+        img
+            width: 40%
+
+    .plug__title
+        font-size: 30px
+        line-height: 30px
+        margin-top: 30px
+
+    .plug__block 
+        width: 100%
+
+@media screen and ( max-width: 550px )
+    .plug__back
+        img
+            width: 100%

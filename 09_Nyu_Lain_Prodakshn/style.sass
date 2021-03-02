@@ -1,0 +1,102 @@
+body,
+html
+    padding: 0
+    margin: 0
+    font-family: Cormorant Garamond
+    color: #fff
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 24px
+    min-width: 320px
+    background: #060400
+    min-height: 100vh
+
+.wrapper
+    max-width: 1290px
+    width: 90%
+    margin: 0 auto
+    position: relative
+
+.plug
+    position: relative
+    background-image: url(back.png)
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+    height: 100%
+        
+    &__address
+        max-width: 330px
+        margin-bottom: 48px
+
+    &__email
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-top: 80px
+        padding-top: 14px
+        width: 220px
+        border-top: 1px solid #A2884E
+
+    &__icon
+        background-image: url('mail.svg')
+        background-repeat: no-repeat
+        background-position: center center
+        width: 16px
+        height: 16px
+        margin-right: 12px
+
+    &__top
+        padding: 21px 0 35px 0
+        border-top: 1px solid #A2884E
+        border-bottom: 1px solid #A2884E
+        display: inline-block
+        margin-bottom: 100px
+        margin-top: 100px
+
+    &__title
+        font-family: Cormorant Garamond
+        font-style: normal
+        font-weight: bold
+        font-size: 52px
+        line-height: 72px
+        color: #FFFFFF
+        margin: 0 0 9px 0
+    
+    &__title-h2
+        font-family: Cormorant Garamond
+        font-style: normal
+        font-weight: normal
+        font-size: 32px
+        line-height: 32px
+        color: #C4C4C4
+        margin: 0
+
+    &__text
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 26px
+        color: #FFFFFF
+        font-family: Montserrat
+
+        &_en
+            margin-bottom: 100px
+
+@media screen and ( max-width: 1050px )
+    .plug__address
+        width: 100%
+
+    .plug__email
+        width: 100%
+        text-align: center
+        margin: 15px 0
+
+@media screen and ( max-width: 900px )
+    .plug__title 
+        font-size: 40px
+        line-height: 45px
+
+    .plug__text
+        font-size: 16px

@@ -1,0 +1,138 @@
+body,
+html
+    padding: 0
+    margin: 0
+    font-family: Montserrat
+    color: #fff
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 24px
+    min-width: 320px
+    background: #121212
+    min-height: 100vh
+
+h1, h2, p
+    margin: 0
+
+.wrapper
+    max-width: 1290px
+    width: 90%
+    margin: 0 auto
+    position: relative
+    display: flex
+    flex-wrap: wrap
+    align-items: stretch
+    padding-bottom: 100px
+
+.plug
+
+    & *
+        z-index: 1
+
+    &__top
+        padding: 90px 0 40px
+        width: calc(45% - 80px)
+        margin-right: 80px
+        align-self: flex-start
+        position: relative
+        font-size: 18px
+        
+        &_en
+            width: 55%
+            margin-right: 0
+
+        &::after
+            content: ''
+            position: absolute
+            width: 51px
+            height: 3px
+            left: 0
+            bottom: 0
+            background: #A3F75D
+
+    &__title-block
+        width: calc(45% - 120px)
+        margin-right: 120px
+        margin-top: 40px
+        padding-bottom: 50px
+        position: relative
+
+        &_en
+            width: 55%
+            margin-right: 0
+
+    &__title
+        font-family: Montserrat
+        font-weight: bold
+        font-size: 26px
+        line-height: 49px
+    
+    &__discription
+        color: #B8B8B8
+        margin-top: 10px
+        max-width: 450px
+
+    &__bottom
+        display: flex
+        align-items: center
+        width: 100%
+
+    &__email
+        display: flex
+        align-items: center
+        width: 40%
+
+    &__icon
+        background-image: url('mail.svg')
+        background-repeat: no-repeat
+        background-position: center center
+        width: 16px
+        height: 16px
+        margin-right: 12px
+
+    &__back
+        width: 60%
+
+        img
+            width: 100%
+
+
+
+@media screen and ( max-width: 900px )
+    .plug
+        &__title-block
+            width: 100%
+            margin-right: 0
+            margin-top: 15px
+
+        &__top
+            width: 100%
+            margin-right: 0
+            padding-top: 15px
+
+            &_en
+                text-align: right
+
+                &::after
+                    right: 0
+                    left: auto
+
+        &__title-block
+            &_en
+                text-align: right
+
+        &__discription
+            width: 100%   
+            
+@media screen and ( max-width: 468px )
+    .plug
+        &__title
+            font-size: 25px
+            line-height: 30px
+
+        &__email
+            width: 100%
+
+        &__back
+            width: 60%
